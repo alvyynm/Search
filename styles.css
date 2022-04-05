@@ -39,6 +39,13 @@ a:hover {
    margin: 0.5em;
 }
 
+.image-text {
+    position: absolute;
+    color: #4285f4;
+    left: 850px;
+    bottom: 380px;
+}
+
 /*FORM STYLING*/
 
 input[type=text]{
