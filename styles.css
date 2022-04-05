@@ -16,8 +16,8 @@ a {
 
 .middle-container {
     text-align: center;
-    margin-top: 255px;
-    margin-bottom: 235px;
+    margin-top: 200px;
+    margin-bottom: 290px;
 }
 
 .container {
@@ -39,6 +39,7 @@ a {
     margin-left: 2px;
     margin-right: auto;
     border-top: 1px solid orange;
+    background-color: #70757a;
 }
 
 ul {
