@@ -30,6 +30,24 @@ a {
    margin: 0.5em;
 }
 
+/*FORM STYLING*/
+
+input[type=text]{
+    padding: 10px;
+    width: 500px;
+    border-radius: 17px;
+    margin-bottom: 24px;
+    border: 1px solid rgb(204, 207, 210);
+    margin-top: 20px;
+}
+
+input[type=submit]{
+    font-size: 14px;
+    padding: 10px 16px;
+    border: 1px solid #f8f9fa;
+    border-radius: 3px;
+    color: #3c4043;
+}
 
 /*FOOTER STYLING*/
 
@@ -38,7 +56,6 @@ a {
     justify-content: space-between;
     margin-left: 2px;
     margin-right: auto;
-    border-top: 1px solid orange;
     background-color: #dadce0;
     border-top: 1px solid #70757a;
 }
