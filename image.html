@@ -2,32 +2,52 @@
 <html lang="en">
     <head>
         <title>Search</title>
+        <link rel="stylesheet" href="styles.css">
     </head>
     <body>
-        <div class="top-section">
-            <a href="index.html">Google Search</a>
+        <div id="parent-container">
+            <div class="container">
+                
+                <div>
+                    <a href="index.html">Google Search</a>
+                </div>
+                
+            </div>
+
+            <div class="middle-container">
+                <div>
+                    <img src="googlelogo.png" alt="Google logo">
+                    <span class="image-text">images</span>
+                </div>
+                <div>
+                    <form action="https://www.google.com/search">
+                        <input type="text" name="q"><br>
+                        <input type="submit" value="Google Search">
+                    </form>
+                </div>
+                
+            </div>
+            
+            <div class="footer">
+                <div class="left-footer">
+                    <ul>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Advertising</a></li>
+                        <li><a href="#">Business</a></li>
+                        <li><a href="#">How Search works</a></li>
+                    </ul>
+                </div>
+
+                <div class="right-footer">
+                    <ul>
+                        <li><a href="#">Privacy</a></li>
+                        <li><a href="#">Terms</a></li>
+                        <li><a href="#">Settings</a></li>
+                    </ul>
+                    
+                </div>
+            </div>
         </div>
-        <form action="https://www.google.com/search">
-            <input type="text" name="q">
-            <input type="submit" value="Google Search">
-        </form>
-        <div class="footer">
-            <div class="left-footer">
-                <ul>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Advertising</a></li>
-                    <li><a href="#">Business</a></li>
-                    <li><a href="#">How Search works</a></li>
-                </ul>
-            </div>
-            <div class="center-footer">
-                <a href="#">Carbon neutral since 2007</a>
-            </div>
-            <div class="right-footer">
-                <li><a href="#">Privacy</a></li>
-                <li><a href="#">Terms</a></li>
-                <li><a href="#">Settings</a></li>
-            </div>
-        </div>
+        
     </body>
 </html>
