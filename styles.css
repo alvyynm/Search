@@ -17,6 +17,14 @@ a:hover {
     text-decoration: underline;
 }
 
+div > a {
+    color:#4285f4;
+}
+
+div > a:hover {
+    text-decoration:underline;
+}
+
 *:focus {
     outline:none !important
 }
