@@ -74,6 +74,28 @@ h5 {
 .lower-section {
     margin-bottom: 25px;
 }
+
+.topform-section {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.form-container, .major-heading, .lower-section {
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+.major-div {
+    display: flex;
+    flex-wrap: wrap;
+    /* justify-content: space-between; */
+    align-items: center;
+}
+
+.inline-divs {
+    padding: 7px;
+
+}
 /*FORM STYLING*/
 
 input[type=text]{
