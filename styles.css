@@ -130,6 +130,12 @@ select {
     padding: 12px 7px;
 }
 
+#blue-btn {
+    color: white;
+    background-color: #4285f4;
+    align-items: flex-end;
+}
+
 /*FORM STYLING*/
 
 input[type=text]{
