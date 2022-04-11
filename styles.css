@@ -85,6 +85,10 @@ h5 {
     margin-right: 30px;
 }
 
+.form-container, .lower-section {
+    font-size: 13px;
+}
+
 .major-heading {
     color: #d93025;
 }
