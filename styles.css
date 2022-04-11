@@ -85,6 +85,10 @@ h5 {
     margin-right: 30px;
 }
 
+.major-heading {
+    color: #d93025;
+}
+
 .major-div {
     display: flex;
     flex-wrap: wrap;
