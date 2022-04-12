@@ -75,11 +75,24 @@ h5 {
     margin-bottom: 25px;
 }
 
-.topform-section {
-    display: flex;
-    flex-wrap: wrap;
+.large-txt {
+    font-size: larger;
 }
 
+/*TABLE*/
+
+.topform-section {
+    display: table;
+    font-size: 13px;
+}
+.major-div {
+    display: table-row;
+    padding: 10px;
+}
+.inline-divs {
+    display: table-cell;
+    padding: 10px;
+}
 .form-container, .major-heading, .lower-section {
     margin-left: 30px;
     margin-right: 30px;
@@ -91,18 +104,6 @@ h5 {
 
 .major-heading {
     color: #d93025;
-}
-
-.major-div {
-    display: flex;
-    flex-wrap: wrap;
-    /* justify-content: space-between; */
-    align-items: center;
-}
-
-.inline-divs {
-    padding: 7px;
-
 }
 
 #input-one, #input-two, #input-three, #input-four, #input-five {
@@ -127,12 +128,6 @@ select {
     width: 400px;
     border: 1px solid rgb(204, 207, 210);
     padding: 12px 7px;
-}
-
-#btn {
-
-    width: 510px;
-    overflow: hidden;
 }
 
 #blue-btn {
