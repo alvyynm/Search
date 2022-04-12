@@ -105,7 +105,7 @@ h5 {
 
 }
 
-#input-one, #input-two, #input-three, #input-four, #input-five, #input-eight {
+#input-one, #input-two, #input-three, #input-four, #input-five {
     padding: opx;
     width: 400px;
     border-radius: 0;
@@ -121,15 +121,6 @@ h5 {
 
 #input-one:hover {
     box-shadow: none;
-}
-
-#input-six, #input-seven {
-    padding: opx;
-    width: 125px;
-    border-radius: 0;
-    margin-bottom: 0;
-    border: 1px solid rgb(204, 207, 210);
-    margin-top: 0;
 }
 
 select {
