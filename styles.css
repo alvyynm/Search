@@ -48,10 +48,9 @@ div > a:hover {
 }
 
 .image-text {
-    position: absolute;
+    position: relative;
+    right: 3.7em;
     color: #4285f4;
-    left: 680px;
-    bottom: 298px;
 }
 
 /*STYLING FOR ADVANCED SEARCH PAGE*/
