@@ -180,6 +180,9 @@ input[type=submit]:hover {
     margin-right: auto;
     background-color: #dadce0;
     border-top: 1px solid rgb(204, 207, 210);
+    position: fixed;
+    width: 100%;
+    bottom: 0;
 }
 
 ul {
