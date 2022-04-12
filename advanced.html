@@ -28,9 +28,9 @@
                         <div class="topform-section">
                             <div class="major-div">
                                 <div class="inline-divs">
-                                    <span>Find pages with...</span>
+                                    <span><b>Find pages with...</b></span>
                                  </div>
-                                 <div class="inline-divs"><input type="text" class="inline-divs" disabled></div>
+                                 <div class="inline-divs"><input type="text" class="inline-divs" id="input-one" disabled></div>
                                  <div class="inline-divs">
                                      <span>To do this in the search box.</span>
                                  </div>
@@ -41,7 +41,7 @@
                                     <span>all these words:</span>
                                 </div>
                                 <div class="inline-divs">
-                                    <input class="textinput" type="text" name="as_q">
+                                    <input class="textinput" type="text" name="as_q" id="input-two">
                                 </div>
                                 <div class="inline-divs">
                                     <span>Type the important words: tri-colour rat terrier</span>
@@ -52,7 +52,7 @@
                                     <span>this exact word or phrase:</span>
                                 </div>
                                 <div class="inline-divs">
-                                    <input class="textinput" type="text" name="as_epq">
+                                    <input class="textinput" type="text" name="as_epq" id="input-three">
                                 </div>
                                 <div class="inline-divs">
                                     <span>Put exact words in quotes: "rat terrier"</span>
@@ -63,7 +63,7 @@
                                     <span>any of these words:</span>
                                 </div>
                                 <div class="inline-divs">
-                                    <input class="textinput" type="text" name="as_oq">
+                                    <input class="textinput" type="text" name="as_oq" id="input-four">
                                 </div>
                                 <div class="inline-divs">
                                     <span>Type OR between all the words you want: miniature OR standard</span>
@@ -74,211 +74,50 @@
                                     <span>none of these words:</span>
                                 </div>
                                 <div class="inline-divs">
-                                    <input class="textinput" type="text" name="as_eq">
+                                    <input class="textinput" type="text" name="as_eq" id="input-five">
                                 </div>
                                 <div class="inline-divs">
                                     <span>Put a minus sign just before words that you don't want: -rodent, -"Jack Russell"</span>
                                 </div>
                             </div>
                             <div class="major-div">
+                                <div class="inline-divs"></div>
                                 <div class="inline-divs">
-                                    <span>numbers ranging from:</span>
+                                    <div id="btn">
+                                        <input type="submit" value="Advanced Search" class="submit-button" id="blue-btn">
+                                    </div>
                                 </div>
-                                <div class="inline-divs">
-                                    <input class="textinput" type="text" name="as_nlo">
-                                </div>
-                                <div class="inline-divs">
-                                    <span>to</span>
-                                </div>
-                                <div class="inline-divs">
-                                    <input class="textinput" type="text" name="as_nhi">
-                                </div>
-                                <div class="inline-divs">
-                                    <span>Put two full stops between the numbers and add a unit of measurement: 10..35 kg, £300..£500, 2010..2011</span>
-                                </div>
+                                <div class="inline-divs"></div>
                             </div>
                         </div>
-                        <hr>
-                        <div>
-                            <span>Then narrow your results by...</span>
-                        </div>
-                        <div class="bottomform-section">
-                            <div class="major-div">
-                                <div class="inline-divs">
-                                    <label for="lr_input">language:</label>
-                                </div>
-                                <div class="inline-divs">
-                                    <select name="lr" id="lr_input">
-                                        <option value>any language</option>
-                                        <option value="lang_en">English</option>
-                                        <option value="lang_af">Afrikaans</option>
-                                        <option value="lang_fr">French</option>
-                                        <option value="lang_ar">Arabic</option>
-                                        <option value="lang_nl">Dutch</option>
-                                        <option value="lang_zh-TW">Chinese (Traditional)</option>
-                                  </select>
-                                </div>
-                                <div class="inline-divs">
-                                    <span>Find pages in the language that you select.</span>
-                                </div>
-                            </div>
-                            <div class="major-div">
-                                <div class="inline-divs">
-                                    <span>region:</span>
-                                </div>
-                                <div class="inline-divs">
-                                    <select name="cr" id="cr_input">
-                                        <option value>any region</option>
-                                        <option value="countryAF">Afghanistan</option>
-                                        <option value="countryAM">Armenia<option>
-                                        <option value="countryKE">Kenya</option>
-                                        <option value="countryDZ">Algeria</option>
-                                        <option value="countryRS">Serbia</option>
-                                        <option value="countryYE">Yemen</option>
-                                    </select>
-                                </div>
-                                <div class="inline-divs">
-                                    <span>Find pages published in a particular region.</span>
-                                </div>
-                            </div>
-                            <div class="major-div">
-                                <div class="inline-divs">
-                                    <span>last update:</span>
-                                </div>
-                                <div class="inline-divs">
-                                    <select name="as_qdr" id="as_qdr_input">
-                                        <option value>anytime</option>
-                                        <option value="d">past 24 hours</option>
-                                        <option value="w">past week</option>
-                                        <option value="m">past month</option>
-                                        <option value="y">past year</option>
-                                    </select>
-                                </div>
-                                <div class="inline-divs">
-                                    <span>Find pages updated within the time that you specify.</span>
-                                </div>
-                            </div>
-                            <div class="major-div">
-                                <div class="inline-divs">
-                                    <span>site or domain:</span>
-                                </div>
-                                <div class="inline-divs">
-                                    <input class="textinput" type="text" name="as_sitesearch">
-                                </div>
-                                <div class="inline-divs">
-                                    <span>Search one site (like wikipedia.org ) or limit your results to a domain like .edu, .org or .gov
-                                    </span>
-                                </div>
-                            </div>
-                            <div class="major-div">
-                                <div class="inline-divs">
-                                    <span>terms appearing:</span>
-                                </div>
-                                <div class="inline-divs">
-                                    <select name="as_occt" id="as_occt_input">
-                                        <option value="any">anywhere in the page</option>
-                                        <option value="title">in the title of the page</option>
-                                        <option value="body">in the text of the page</option>
-                                        <option value="url">in the URL of the page</option>
-                                        <option value="links">in links to the page</option>
-                                    </select>
-                                </div>
-                                <div class="inline-divs">
-                                    <span>Search for terms in the whole page, page title or web address, or links to the page you're looking for.</span>
-                                </div>
-                            </div>
-                            <div class="major-div">
-                                <div class="inline-divs">
-                                    <a href="https://support.google.com/websearch?p=adv_safesearch&hl=en">Safesearch</a>:
-                                </div>
-                                <div class="inline-divs">
-                                    <select name="safe" id="as_safesearch_input">
-                                        <option value="images">Show explicit results</option>
-                                        <option value="active">Hide explicit results</option>
-                                    </select>
-                                </div>
-                                <div class="inline-divs">
-                                    <span>
-                                        Tell <a href="https://support.google.com/websearch?p=adv_safesearch&hl=en">Safesearch</a> whether to filter sexually explicit content.
-                                    </span>
-                                </div>
-                            </div>
-                            <div class="major-div">
-                                <div class="inline-divs">
-                                    <span>file type:</span>
-                                </div>
-                                <div class="inline-divs">
-                                    <select name="as_filetype" id="as_filetype_input">
-                                        <option value="#">any format</option>
-                                        <option value="">Adobe Acrobat PDF (.pdf)</option>
-                                        <option value="">Adobe Postscript (.ps)</option>
-                                        <option value="">Autodesk DWF (.dwf)</option>
-                                        <option value="">Google Earth KML (.kml)</option>
-                                        <option value="">Google Earth KMZ (.kmz) </option>
-                                        <option value="">Microsoft Excel (.xls)</option>
-                                        <option value="">Microsoft PowerPoint (.ppt)</option>
-                                        <option value="">Microsoft Word (.docx)</option>
-                                        <option value="">Rich Text Format (.rtf)</option>
-                                        <option value="">Shockwave Flash (.swf)</option>
-                                    </select>
-                                </div>
-                                <div class="inline-divs">
-                                    Find pages in the format that you prefer.
-                                </div>
-                            </div>
-                            <div class="major-div">
-                                <div class="inline-divs">
-                                    <span><a href="https://support.google.com/websearch?p=ws_images_usagerights&hl=en">usage rights</a></span>
-                                </div>
-                                <div class="inline-divs">
-                                    <select name="tbs" id="as_rights_input">
-                                        <option value="">not filtered by licence</option>
-                                        <option value="f">free to use or share</option>
-                                        <option value="fc">free to use or share, even commercially</option>
-                                        <option value="fm">free to use, share or modify</option>
-                                        <option value="fmc">free to use, share or modify, even commercially</option>
-                                    </select>
-                                </div>
-                                <div class="inline-divs">
-                                    <span>Find pages that you are free to use yourself.</span>
-                                </div>
-                            </div>
-                        </div>
-  
-                        <input type="submit" value="Advanced Search" class="submit-button">
+                </div>
+            </div>
+                        
                     </form>
                 </div>
                 
-            </div>
-
-            <div class="lower-section">
-                <h5>You can also...</h5>
-                <div><a href="https://support.google.com/websearch?p=adv_pages_similar&amp;hl=en">Find pages that are similar to a URL</a></div>
-                <div><a href="https://support.google.com/websearch?p=adv_pages_visited&amp;hl=en">Search pages that you've visited</a></div>
-                <div><a href="https://support.google.com/websearch?p=adv_operators&amp;hl=en">Use operators in the search box</a></div>
-                <div><a href="/preferences?hl=en-KE">Customise your search settings</a></div>
             </div>
             
             <div class="footer">
                 <div class="left-footer">
                     <ul>
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Advertising</a></li>
-                        <li><a href="#">Business</a></li>
-                        <li><a href="#">How Search works</a></li>
+                        <li><a href="https://about.google/">About</a></li>
+                        <li><a href="https://ads.google.com/home/">Advertising</a></li>
+                        <li><a href="https://www.google.com/services/">Business</a></li>
+                        <li><a href="https://google.com/search/howsearchworks/">How Search works</a></li>
                     </ul>
                 </div>
                 <div class="center-footer">
                     <ul>
-                        <li><a href="#">Carbon neutral since 2007</a></li>
+                        <li><a href="https://sustainability.google/carbon-free/">Carbon neutral since 2007</a></li>
                     </ul>
                     
                 </div>
                 <div class="right-footer">
                     <ul>
-                        <li><a href="#">Privacy</a></li>
-                        <li><a href="#">Terms</a></li>
-                        <li><a href="#">Settings</a></li>
+                        <li><a href="https://policies.google.com/privacy">Privacy</a></li>
+                        <li><a href="https://policies.google.com/terms">Terms</a></li>
+                        <li><a href="https://www.google.com/preferences">Settings</a></li>
                     </ul>
                     
                 </div>
