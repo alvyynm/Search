@@ -29,6 +29,10 @@ div > a:hover {
     outline:none !important
 }
 
+hr {
+    border: 0.5px solid rgb(204, 207, 210);
+}
+
 /*BODY STYLING*/
 
 .middle-container {
